@@ -1,6 +1,6 @@
 # RockyLib API
 
-**RockyLib** is an open-source library primarily used in **rockyyyfog** mods, but designed to be freely usable by any creator in the Minecraft community.  
+**RockyLib** is an open-source library primarily used in **RockyDev** mods, but designed to be freely usable by any creator in the Minecraft community.  
 
 Its goal is to provide utilities and tools that simplify cross-platform mod development.
 
