@@ -1,13 +1,29 @@
 # RockyLib API
-## is a library that is used in rockyyyfog mods and can also be used 
-## by the entire minecraft community and many people or creators rockylib 
-### is open source, meaning anyone can view and edit it.
-#### Good luck, I'm working on implementing The Quilt.
 
-# RockyLib-API
-### RockyLib API Is This Versión Of RockyLib With Gradle Proyect With This One Code!!
-##### More Info Visit https://github.com/RockyyyGM/RockyLib-API-/issues/1
-## *Curseforge* *RockyyyGM*
-# https://www.curseforge.com/members/rockyyyfog/projects
-# *RockyDev*
-# https://www.curseforge.com/members/rockydev/projects
+**RockyLib** is an open-source library primarily used in **rockyyyfog** mods, but designed to be freely usable by any creator in the Minecraft community.  
+
+Its goal is to provide utilities and tools that simplify cross-platform mod development.
+
+RockyLib is currently being expanded with support for new platforms, including **The Quilt**.
+
+---
+
+## 📦 Features
+- Easy integration API for Minecraft mods.
+- Support for multiple loaders: Forge, Fabric, NeoForged, and soon Quilt.
+- Open source and extensible by the community.
+- Actively maintained project.
+
+---
+
+## 🛠 Installation
+Include the dependency in your `build.gradle`:
+
+```gradle
+repositories {
+    maven { url "https://your-repo-url" }
+}
+
+dependencies {
+    implementation "dev.rocky:rockylib:VERSION"
+}
