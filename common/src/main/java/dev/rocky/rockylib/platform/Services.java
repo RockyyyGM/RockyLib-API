@@ -1,7 +1,7 @@
 package dev.rocky.rockylib.platform;
 
 import dev.rocky.rockylib.Constants;
-import dev.rocky.rockylib.platform.services.IRockyLibEventSetup;
+import dev.rocky.rockylib.platform.services.ForgeRockyLibEventSetup;
 import dev.rocky.rockylib.platform.services.IPlatformHelper;
 import dev.rocky.rockylib.platform.services.IRegistrarManager;
 
@@ -20,7 +20,7 @@ public class Services {
     // This is the service that provides the event setup methods for the Amber mod. It allows us to register common,
     // client, and server event handlers in a platform-agnostic way. The actual implementation will vary depending on the
     // platform (Forge, Fabric, etc.) but the interface remains the same.
-    public static final IRockyLibEventSetup ROCKYLIB_EVENT_SETUP = load(IRockyLibEventSetup.class);
+    public static final ForgeRockyLibEventSetup ROCKYLIB_EVENT_SETUP = load(ForgeRockyLibEventSetup.class);
 
     // Platform specific registrar manager implementation
     public static final IRegistrarManager REGISTRAR_MANAGER = load(IRegistrarManager.class);

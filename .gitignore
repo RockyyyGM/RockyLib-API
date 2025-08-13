@@ -1,25 +1,21 @@
-# eclipse
-bin
-*.launch
-.settings
-.metadata
-.classpath
-.project
+# Java
+*.class
+*.jar
+*.war
+*.ear
 
-# idea
-out
-*.ipr
-*.iws
+# Gradle
+.gradle/
+build/
+
+# IDEs
+.idea/
 *.iml
-.idea/*
-!.idea/scopes
+.vscode/
 
-# gradle
-build
-.gradle
+# Otros
+out/
+run/
 
-# other
-eclipse
-run
-runs
-*.bak
+
+

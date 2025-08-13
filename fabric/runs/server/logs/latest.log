@@ -1,0 +1,8 @@
+[18:49:41] [main/INFO]: Loading Minecraft 1.21.6 with Fabric Loader 0.16.14
+[18:49:42] [main/INFO]: Loading 4 mods:
+	- fabricloader 0.16.14
+	   \-- mixinextras 0.4.1
+	- java 21
+	- minecraft 1.21.6
+[18:49:42] [main/INFO]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/C:/Users/Alex/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.5+mixin.0.8.7/22f9eb729e216a091673a574a5906dc1b9027fb3/sponge-mixin-0.15.5+mixin.0.8.7.jar Service=Knot/Fabric Env=SERVER
+[18:50:08] [main/INFO]: You need to agree to the EULA in order to run the server. Go to eula.txt for more info.

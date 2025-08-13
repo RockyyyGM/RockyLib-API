@@ -8,7 +8,7 @@ import dev.rocky.rockylib.api.event.v1.events.common.PlayerEvents;
 import dev.rocky.rockylib.api.event.v1.events.common.client.ClientCommandEvents;
 import dev.rocky.rockylib.api.event.v1.events.common.client.HudEvents;
 import dev.rocky.rockylib.api.keymapping.KeybindHelper;
-import dev.rocky.rockylib.platform.services.IRockyLibEventSetup;
+import dev.rocky.rockylib.platform.services.ForgeRockyLibEventSetup;
 import net.minecraft.world.InteractionResult;
 import net.neoforged.bus.api.EventPriority;
 import net.neoforged.bus.api.IEventBus;
@@ -25,7 +25,7 @@ import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
 import static net.minecraft.world.InteractionResult.CONSUME;
 import static net.minecraft.world.InteractionResult.SUCCESS;
 
-public class NeoForgeRockyLibEventSetup implements IRockyLibEventSetup {
+public class NeoForgeRockyLibEventSetup implements ForgeRockyLibEventSetup {
     @Override
     public void registerCommon() {
         NeoForge.EVENT_BUS.register(EventHandlerCommonNeoForge.class);

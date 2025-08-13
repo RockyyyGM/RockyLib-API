@@ -15,17 +15,14 @@ plugins {
  */
 static String extractHeaderLatestFooterFromChangelog(String completeChangelog) {
 
-    // 1) header: up to the first version heading
-    def header = (completeChangelog =~ /(?ms)\A.*?(?=^## \d+\.\d+\.\d+)/)[0]
+    def headerMatcher = (completeChangelog =~ /(?ms)\A.*?(?=^## \d+\.\d+\.\d+)/)
+    def header = headerMatcher ? headerMatcher[0] : ""
 
-    // 2) latest version block: from that heading until
-    //    – the next version heading  OR
-    //    – the first non-numeric heading (e.g. 'Types of changes')  OR
-    //    – end of file
-    def latest = (completeChangelog =~ /(?ms)^## \d+\.\d+\.\d+[\s\S]*?(?=^## (?:\d+\.\d+\.\d+|[^0-9]|$))/)[0]
+    def latestMatcher = (completeChangelog =~ /(?ms)^## \d+\.\d+\.\d+[\s\S]*?(?=^## (?:\d+\.\d+\.\d+|[^0-9]|$))/)
+    def latest = latestMatcher ? latestMatcher[0] : ""
 
-    // 3) footer: everything from '## Types of changes' (or any other marker you prefer)
-    def footer = (completeChangelog =~ /(?ms)^## Types of changes[\s\S]*/)[0]
+    def footerMatcher = (completeChangelog =~ /(?ms)^## Types of changes[\s\S]*/)
+    def footer = footerMatcher ? footerMatcher[0] : ""
 
     return header + latest + footer
 }

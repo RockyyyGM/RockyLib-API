@@ -1,7 +1,7 @@
 {
     "schemaVersion": 1,
     "id": "rockylib",
-    "version": "1.26.34+1.21.6",
+    "version": "1.28.2+1.21.8",
     "name": "RockyLib",
     "description": "A Library API For This Mods",
     "authors": [
@@ -26,7 +26,7 @@
     "depends": {
         "fabricloader": ">=0.16.14",
         "fabric-api": "*",
-        "minecraft": "~1.21.6",
+        "minecraft": "~1.21.8",
         "java": ">=21"
     },
     "suggests": {
