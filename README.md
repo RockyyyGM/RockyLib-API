@@ -4,13 +4,13 @@
 
 Its goal is to provide utilities and tools that simplify cross-platform mod development.
 
-RockyLib is currently being expanded with support for new platforms, including **The Quilt**.
+RockyLib is currently being expanded with support for new platforms, including **New Features In The Code**.
 
 ---
 
 ## 📦 Features
 - Easy integration API for Minecraft mods.
-- Support for multiple loaders: Forge, Fabric, NeoForged, and soon Quilt.
+- Support for multiple loaders: Forge, Fabric, NeoForged, and soon Features.
 - Open source and extensible by the community.
 - Actively maintained project.
 
